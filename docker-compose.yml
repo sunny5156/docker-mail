@@ -24,11 +24,11 @@ mail:
       - ./ssl/private/:/etc/ssl/private/
       - ./ssl/dkim/:/ewomail/dkim/
     environment:
-      MYSQL_ROOT_PASSWORD:mysql 		#数据库root密码，默认：mysql
-	  MYSQL_MAIL_PASSWORD:123456 		#数据库ewomail密码，默认：123456
-	  URL:mail.sfc.com					#网站链接，后面不要加/线
-	  WEBMAIL_URL:mail.sfc.com			#邮件系统链接，后面不要加/线
-	  TITLE:sfc-mailer					#用户邮统标题
-	  COPYRIGHT:sfc						#邮箱管理后台网站版权
-	  ICP:88888888 						#邮箱管理后台网站备案号
-	  LANGUAGE:zh_CN					#语言选择，默认:zh_CN
+      MYSQL_ROOT_PASSWORD:mysql
+	  MYSQL_MAIL_PASSWORD:123456
+	  URL:mail.sfc.com
+	  WEBMAIL_URL:mail.sfc.com
+	  TITLE:sfc-mailer
+	  COPYRIGHT:sfc
+	  ICP:88888888
+	  LANGUAGE:zh_CN
