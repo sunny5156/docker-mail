@@ -1,4 +1,4 @@
-version: '1'
+version: '1.0'
 
 mail:
     image: bestwu/ewomail
@@ -24,11 +24,11 @@ mail:
       - ./ssl/private/:/etc/ssl/private/
       - ./ssl/dkim/:/ewomail/dkim/
     environment:
-      MYSQL_ROOT_PASSWORD:mysql
-      MYSQL_MAIL_PASSWORD:123456
-      URL:mail.sfc.com
-      WEBMAIL_URL:mail.sfc.com
-      TITLE:sfc-mailer
-      COPYRIGHT:sfc
-      ICP:88888888
-      LANGUAGE:zh_CN
+      - MYSQL_ROOT_PASSWORD:mysql
+      - MYSQL_MAIL_PASSWORD:123456
+      - URL:mail.sfc.com
+      - WEBMAIL_URL:mail.sfc.com
+      - TITLE:sfc-mailer
+      - COPYRIGHT:sfc
+      - ICP:88888888
+      - LANGUAGE:zh_CN
