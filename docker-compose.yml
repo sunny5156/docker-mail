@@ -1,6 +1,6 @@
 mail:
     image: bestwu/ewomail
-    hostname: mail.sfc.com
+    hostname: mail.suntekcorps.com
     container_name: ewomail
     restart: always
 #    ports:
@@ -24,8 +24,8 @@ mail:
     environment:
       - MYSQL_ROOT_PASSWORD:mysql
       - MYSQL_MAIL_PASSWORD:123456
-      - URL:mail.sfc.com
-      - WEBMAIL_URL:mail.sfc.com
+      - URL:mail.suntekcorps.com
+      - WEBMAIL_URL:mail.suntekcorps.com
       - TITLE:sfc-mailer
       - COPYRIGHT:sfc
       - ICP:88888888
